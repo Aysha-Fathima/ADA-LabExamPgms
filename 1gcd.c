@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int count = 0,m1,n1,m2,n2,min,temp1 = 0,temp2 = 0,i,j,item;
+    int count = 0,m1,n1,m2,n2,min,temp1 = 0,temp2 = 0;
     FILE *f1,*f2;
     printf("Enter two numbers to find gcd\n");
     scanf("%d%d",&m1,&n1);
