@@ -23,7 +23,6 @@ void selection(int a[],int n,char fn[])
             int temp = a[j];
             a[j] = a[small];
             a[small] = temp;
-        //fclose(f);
     }
     printf("%d\t",c);
     FILE *f ;
