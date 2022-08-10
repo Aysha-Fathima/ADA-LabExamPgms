@@ -32,7 +32,8 @@ void main()
     int i,j,flag = 0;
     printf("enter the number of vertices\n");
     scanf("%d",&n);
-    int in[n];
+    int *in;
+    in = (int*)calloc(n,sizeof(int));
     printf("enter the adjacency matrix\n");
     for(i = 0;i < n;i++)
     {
@@ -64,7 +65,7 @@ void main()
     printf("the topological sorting is \n");
     for(i = n-1;i >= 0;i--)
     {
-        printf("%d\t",topo[i]);
+        printf("%d -> ",topo[i]);
     }
     printf("\n");
 }
